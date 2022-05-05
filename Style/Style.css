@@ -40,7 +40,7 @@ nav a {
     color: rgb(32, 32, 32);
     font-weight: 400;
     font-size: 24px;
-    padding: 10px;
+    letter-spacing: -2;
 }
 
 nav a:hover {
@@ -107,6 +107,7 @@ nav a:hover {
     padding: 50px 0px;
     box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.25);
     font-family: 'Kalam';
+    width: 100%;
 }
 
 .a {
@@ -123,6 +124,11 @@ nav a:hover {
     width: 60%;
     margin: 0 auto;
     font-size: 24px;
+}
+
+.desktop {
+    margin: 0 auto;
+    height: 150px;
 }
 
 .menina {
@@ -215,10 +221,15 @@ button:active {
     height: 30px;
 }
 
+
 @media screen and (max-width: 900px) {
     .menina {
         margin-top: -120px;
 
+    }
+
+    .desktop {
+        display: block;
     }
 
     iframe {
@@ -226,7 +237,18 @@ button:active {
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width:2000px) {
+
+    .mobile {
+        display: none;
+    }
+
+    .icon h1 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 715px) {
 
     .seta-l,
     .seta-r {
@@ -245,6 +267,19 @@ button:active {
 
     .center {
         margin: 0 auto;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .icon h1 {
+        display: block;
     }
 
     .info {
